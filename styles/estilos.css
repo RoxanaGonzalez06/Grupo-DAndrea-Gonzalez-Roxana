@@ -296,6 +296,7 @@
 body{
     font-family: 'Roboto';
     width: 100vw;
+    background-image: linear-gradient(red green )
 }
 header{
     background-color: white;
