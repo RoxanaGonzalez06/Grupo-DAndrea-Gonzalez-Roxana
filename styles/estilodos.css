@@ -1,11 +1,10 @@
 /*ESTILOS GENERALES*/
 header{
     width: 100%;
-    height: 250px;
+    height: 200px;
     margin: 0%;
     padding: 2%;
-    border: solid 1px black;
-}
+    }
 
     /*Menu*/
 ul {
@@ -15,7 +14,7 @@ ul {
     padding: 0;
     overflow: hidden;
     background-color: rgb(145, 90, 86);
-    border: solid 1px black;
+
   }
   
   li {
@@ -32,27 +31,24 @@ ul {
     /*Cuerpo*/
 main {
     width: 100%;
-    height: 1000px;
+    height: 1300px;
     margin: 0%;
     padding: 2%;
-    border: solid 1px black;
 }
 
 article {
     width: 90%;
     margin: 1%;
     text-align: center;
-    border: solid 1px black;
 }
 
     /*Pie de pagina*/
 footer {
     width: 100%;
-    height: 200px;
+    height: 280px;
     margin: 0%;
     padding: 2%;
-    border: solid 1px black;
-        
+         
 }
 
 /* ESTILOS ESPECIFICOS */
@@ -70,39 +66,6 @@ footer {
 .redes:hover {
     width: 200%;
 }
-.div-uno {
-    border: solid 1px black;
 
-}
 
-.div-dos {
-    border: solid 1px black;
 
-}
-
-/* GRID AREA*/
-#grid-area {
-    display: grid;
-    grid-template-areas: 
-    "header header header header" /*linea 1*/
-    "header header header header" /*linea 2*/
-    "ul ul ul ul ul" /*linea 3*/
-
-}
-
-/*nombre de las areas*/
-header {
-    grid-area: cabeza;
-}
-
-ul {
-    grid-area: menu;
-}
-
-main {
-    grid-area: principal;
-}
-
-footer {
-    grid-area: pie;
-}

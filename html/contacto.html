@@ -5,47 +5,59 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Contacto - Grupo D'Andrea</title>
-    <link rel="shortcut icon" href="../icono.ico" type="image/x-icon">
-    <link rel="icon" href="icono.ico" type="image/x-icon">   
-    <link rel="stylesheet" href="../styles/estilos.css"> 
+    <link rel="shortcut icon" href="../favicon.ico" type="image/x-icon">
+    <link rel="icon" href="../icono.ico" type="image/x-icon">   
+    <!--ESTILOS BOOTSTRAP-->
+    <link rel="stylesheet" href="../bootstrap/css/bootstrap.css">
+    <!---ESTILOS PROPIOS-->
+    <link rel="stylesheet" href="../styles/estilodos.css">  
 </head>
 <body>
-    <section class="grid-section">
-        <div class="header-primero">
-            <img src="../images/logos/logo_whatsapp.png" width="40" height="40" alt="logo instagram">
-            <img src="../images/logos/logo_facebook.png" width="40" height="40" alt="logo facebook">
-            <img src="../images/logos/logo_linkedin.png" width="40" height="40" alt="logo linkedin">    
-        </div>
-        <div class="header-segundo">        
-            <p>Quiero ser Productor <a href="../html/contacto.html">CONTACTO</a></p>
-        </div>
-    </section>        
-        <header class="header-flex" id="inicio">
-            <div> 
-                <img src="../images/logo.jpeg" width="200px" alt="logo grupo"> 
-            </div>       
-            <div>
-                <img src="../images/logos/logo_telefono.png" width="40" alt="telefono">
-                <p>Llámenos (011) 41234678/9123</p>
+    <header>
+        <!-- primera linea de pagina-->
+        <div class="redes" class="container">
+            <div class="row row-cols-4"> 
+                <div class="col">
+                    <img src="../images/logos/logo_instagram.png" width="10%" alt="logo instagram">
+                    <img src="../images/logos/logo_facebook.png" width="10%" alt="logo facebook">
+                    <img src="../images/logos/logo_linkedin.png" width="10%" alt="logo linkedin">
+                </div>
+                <div class="col">        
+                    <p>Quiero ser Productor <a href="/Proyecto/html/contacto.html">CONTACTO</a></p>
+                </div>
             </div>
-            <div>
-                <img src="../images/logos/mail_dos.png" width="40" alt="e-mail">
-                <p>Envíanos E-Mail info@grupodandrea.com.ar</p>
-            </div>
-            <div>
-                <img src="../images/logos/reloj_dos.png" width="40" alt="reloj">
-                <p>Horarios de atención de L-V: 08 a 17 hs S: 9 a 12:30 hs</p>
-            </div>         
-        </header>   
-        <nav class="menu-flex">
-            <span><a href="../index.html">Home</a></span>
-            <span><a href="../html/nosotros.html">Nosotros</a></span>
-            <span><a href="../html/servicios.html">Servicios</a></span>
-            <span><a href="../html/compañia.html">Compañías</a></span>
-            <span><a href="../html/contacto.html">Contacto</a></span>
-        </nav> 
-    <main>
-        <section>
+        </div>
+        <!-- segunda linea de pagina-->
+        <div class="container"> 
+            <div class="row row-cols-4">
+                <div class="col"> 
+                    <img src="../images/logo.jpeg" width="60%" alt="logo grupo"> 
+                </div>       
+                <div class="col">
+                    <img src="../images/logos/logo_telefono.png" width="15%" alt="telefono">
+                    <p>Llámenos (011) 41234678/9123</p>
+                </div>
+                <div class="col">
+                    <img src="../images/logos/mail_dos.png" width="15%" alt="e-mail">
+                    <p>Envíanos E-Mail info@grupodandrea.com.ar</p>
+                </div>
+                <div class="col">
+                    <img src="../images/logos/reloj_dos.png" width="15%" alt="reloj">
+                    <p>Horarios de atención de L-V: 08 a 17 hs S: 9 a 12:30 hs</p>
+                </div> 
+            </div>  
+        </div>      
+    </header>
+    <!--Menu / tercera linea de pagina-->
+    <ul class="nav nav-pills nav-justified">
+        <li class="nav-item"><a href="../index.html">Home</a></li>
+        <li class="nav-item"><a href="../html/nosotros.html">Nosotros</a></li>
+        <li class="nav-item"><a href="../html/servicios.html">Servicios</a></li>
+        <li class="nav-item"><a href="../html/compañia.html">Compañías</a></li>
+        <li class="nav-item"><a href="../html/contacto.html">Contacto</a></li>
+    </ul> 
+    <main class="main">
+        <section class="text-center">
             <H2>Contacto</H2>
             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio saepe quae sequi excepturi labore ullam mollitia obcaecati. Est laudantium libero illum quod mollitia odit praesentium quia iure voluptatibus! Praesentium eaque iure repellendus omnis ducimus sit sint? Consequuntur, tempore? Quaerat at repudiandae autem assumenda iure natus quidem asperiores illum culpa sunt, officia ex rem magnam nisi, fugit dignissimos perspiciatis! Molestiae laudantium minus, quos, assumenda blanditiis voluptatibus qui repudiandae corporis exercitationem commodi sit quia deleniti officia iste! Voluptas expedita consectetur facere assumenda et enim voluptatibus atque nemo quo temporibus ad ex nostrum ut possimus reiciendis tempora est officiis, tempore, id, qui nobis.</p>  
             <article>   
@@ -56,28 +68,34 @@
             <article>
                 <h3>Formulario de Contacto</h3>        
                 <form action="">
-                    <label for="nombre">Nombre:</label>
-                    <input type="text" name="Nombre"><br>
-                    <label for="mail">Mail:</label>
-                    <input type="mail" name="mail"><br>
-                    <label for="telefono">Teléfono:</label>
-                    <input type="text" name="telefono"><br>
-                    <label for="mensaje">Mensaje:</label>
-                    <textarea name="mensaje" cols="40" aria-rowspan="20"></textarea>
+                    <div>
+                        <label  for="nombre">Nombre:</label>
+                        <input type="text" name="Nombre"><br>
+                        <label for="mail">Mail:</label>
+                        <input type="mail" name="mail"><br>
+                        <label for="telefono">Teléfono:</label>
+                        <input type="text" name="telefono"><br>
+                        <label for="mensaje">Mensaje:</label>
+                        <textarea name="mensaje" cols="40" aria-rowspan="20"></textarea>
+                    </div>
                 </form>  
             </article>
         </section>
+            <!-- Ir a inicio-->    
+            <a href="../index.html">Inicio</a>   
     </main>
-    <footer class="footer-flex">
-        <a href="../index.html">Home</a>
-        <div class="divPie">
-            <img src="../images/logo.jpeg" width="60"> 
+    <footer>
+        <div class="d-flex align-items-center flex-column">
+            <img src="../images/logo.jpeg" width="6%" alt="logo grupo"> 
             <p>GRUPO D'ANDREA ASESORES DE SEGUROS - MAXIMILIANO D'ANDREA N° de inscripción en SSN 12346</p>
-            <img src="../images/logos/descarga.jpg" width="70"> 
+            <img src="../images/logos/descarga.jpg" width="6%" alt="logo SSN"> 
             <p>Superintendencia de Seguro de la Nacion - Organo de Control de la Actividad Aseguradora y Reaseguradora</p>
-            <p>Atención al asegurado 0800-666-8400 / 4338-4000 / <a href="https://www.argentina.gob.ar/superintendencia-de-seguros">WWW.SSN.GOB.AR</a> </p>                
-        </div>              
-            <p class="fin">Copyright 2022 Grupo D'Andrea | Desarrollado por admin - Soluciones Digitales</p>    
+            <p>Atención al asegurado 0800-666-8400 / 4338-4000 / <a href="https://www.argentina.gob.ar/superintendencia-de-seguros">WWW.SSN.GOB.AR</a></p>                
+        </div>
+        <!-- Fin / septima linea de pagina-->              
+            <p>Copyright 2022 Grupo D'Andrea | Desarrollado por admin - Soluciones Digitales</p>    
     </footer>
+    <!--JAVASSCRIPT DE BOOTSTRAP-->
+    <script src="../bootstrap/js/bootstrap.js"></script>
 </body>
 </html>
