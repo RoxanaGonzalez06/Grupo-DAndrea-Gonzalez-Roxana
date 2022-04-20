@@ -621,7 +621,6 @@ progress {
   color: #6c757d;
 }
 
-.container,
 .container-fluid,
 .container-xxl,
 .container-xl,
@@ -737,10 +736,12 @@ progress {
   width: 25%;
 }
 
+/* 
 .col-4 {
   flex: 0 0 auto;
   width: 33.33333333%;
 }
+*/
 
 .col-5 {
   flex: 0 0 auto;

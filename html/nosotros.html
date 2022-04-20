@@ -15,20 +15,20 @@
 <body>
     <header>
         <!-- primera linea de pagina-->
-        <div class="redes" class="container">
-            <div class="row row-cols-4"> 
-                <div class="col">
-                    <img src="../images/logos/logo_instagram.png" width="10%" alt="logo instagram">
-                    <img src="../images/logos/logo_facebook.png" width="10%" alt="logo facebook">
-                    <img src="../images/logos/logo_linkedin.png" width="10%" alt="logo linkedin">
+        <div class="container">
+            <div class="row"> 
+                <div class="col-8">
+                    <img class="redes" src="../images/logos/logo_instagram.png" width="10%" alt="logo instagram">
+                    <img class="redes" src="../images/logos/logo_facebook.png" width="10%" alt="logo facebook">
+                    <img class="redes" src="../images/logos/logo_linkedin.png" width="10%" alt="logo linkedin">
                 </div>
-                <div class="col">        
+                <div class="col-4">        
                     <p>Quiero ser Productor <a href="/Proyecto/html/contacto.html">CONTACTO</a></p>
                 </div>
             </div>
         </div>
         <!-- segunda linea de pagina-->
-        <div class="container"> 
+        <div class="container-fluid"> 
             <div class="row row-cols-4">
                 <div class="col"> 
                     <img src="../images/logo.jpeg" width="60%" alt="logo grupo"> 
@@ -57,44 +57,58 @@
         <li class="nav-item"><a href="../html/contacto.html">Contacto</a></li>
     </ul> 
     <main class="main">
+        <section class="div-animacion">
+            <div>
+                <h2>¿Quienes somos?</h2>
+                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ab voluptate esse reiciendis. Dolore dicta illo facilis veritatis dolor impedit praesentium nisi tempore dolorem doloremque error aliquam eos temporibus, reiciendis rerum.</p>
+            </div>
+            <article class="grid">
+                <div class="div-uno">
+                    <img src="../images/nosotros1.png" width="350px" alt="imagen de compromiso">
+                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Accusamus dolorem quam aliquam magnam, ex praesentium.</p>  
+                </div>
+                <div class="div-uno">
+                    <img src="../images/nosotros2.png" width="350px" alt="imagen de trasparencia"> 
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sunt consequuntur nisi vero iste? Amet, eius.</p> 
+                </div>    
+                <div class="div-uno">   
+                    <img src="../images/nosotros3.png" width="350px" alt="imagen de servicio">
+                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Suscipit impedit velit ut exercitationem autem reprehenderit!</p>  
+                </div>     
+                <div class="div-uno">    
+                    <img src="../images/nosotros4.png" width="350px" alt="imagen de profesionalismo"> 
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Minima in harum odio! Fugiat, temporibus modi.</p>                  
+                </div>     
+            </article>
+        </section>
         <section>
-            <h2>¿Quienes somos?</h2>
-                <p class="p">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ab voluptate esse reiciendis. Dolore dicta illo facilis veritatis dolor impedit praesentium nisi tempore dolorem doloremque error aliquam eos temporibus, reiciendis rerum.</p>
-                <article class="grid-nosotros">
-                    <img src="../images/compromiso.jpg" width="300" alt="imagen de compromiso">
-                        <p class="p">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Fugit, officia!</p>  
-                    <img src="../images/trasparencia.jpg" width="300" alt="imagen de trasparencia"> 
-                        <p class="p">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Doloremque, facilis!</p> 
-                    <img src="../images/servicio.jpg" width="300" alt="imagen de servicio">
-                        <p class="p">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Fugit, officia!</p>  
-                    <img src="../images/profesionalismo.jpg" width="300" alt="imagen de profesionalismo"> 
-                        <p class="p">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Doloremque, facilis!</p>                  
-                </article>
-            <h2>Nuestro equipo</h2>
-                <article>
-                <ul class="ul-flex">
-                    <li><img src="../images/hombre_uno.png" width="200" alt="imagen persona 1">
+                <h2>Nuestro equipo</h2>
+                <article class="grid-dos">
+                    <div class="div-dos">
+                        <img class="equipo" src="../images/foto1.jpg" width="200px" alt="imagen persona 1">
                         <p>Maximiliano D'Andrea</p> 
                         <p>Director | Socio Fundador</p>
                         <p>maximiliano@grupodandrea.com.ar</p>
-                    </li>
-                    <li><img src="../images/mujer_uno.png" width="200" alt="imagen persona 2">
+                    </div>
+                    <div class="div-dos">
+                        <img class="equipo" src="../images/foto3.jpg" width="200px" alt="imagen persona 2">
                         <p>Mariana Grande</p>
                         <p>Ejecutiva de Pagos & Ctas. Ctes.</p>
                         <p>mariana@grupodandrea.com.ar</p>
-                    </li> 
-                    <li><img src="../images/mujer_dos.png" width="200" alt="imagen persona 4">
+                    </div> 
+                    <div class="div-dos">
+                        <img class="equipo" src="../images/foto4.jpg" width="200px" alt="imagen persona 4">
                         <p>Rosario Garcia</p>
                         <p>Ejecutiva Comercial</p>
                         <p>rosario@grupodandrea.com.ar</p>
-                    </li>
-                    <li><img src="../images/hombre_cuatro.png" width="220" alt="imagen persona 3">
+                    </div>
+                    <div class="div-dos">
+                        <img class="equipo" src="../images/foto2.jpg" width="200px" alt="imagen persona 3">
                         <p>Alfonso Perez</p>
                         <p>Ejecutiva Comercial</p>
                         <p>alfonso@grupodandrea.com.ar</p>
-                    </li>
-                </ul>
-            </article>    
+                    </div>
+                </article>
         </section>
             <!-- Ir a Contacto-->    
             <a href="../html/contacto.html">Contacto</a>   
@@ -108,7 +122,7 @@
             <p>Atención al asegurado 0800-666-8400 / 4338-4000 / <a href="https://www.argentina.gob.ar/superintendencia-de-seguros">WWW.SSN.GOB.AR</a></p>                
         </div>
         <!-- Fin / septima linea de pagina-->              
-            <p>Copyright 2022 Grupo D'Andrea | Desarrollado por admin - Soluciones Digitales</p>    
+            <p class="p">Copyright 2022 Grupo D'Andrea | Desarrollado por admin - Soluciones Digitales</p>    
     </footer>
     <!--JAVASSCRIPT DE BOOTSTRAP-->
     <script src="../bootstrap/js/bootstrap.js"></script>

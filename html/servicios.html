@@ -15,20 +15,20 @@
 <body>
     <header>
         <!-- primera linea de pagina-->
-        <div class="redes" class="container">
-            <div class="row row-cols-4"> 
-                <div class="col">
-                    <img src="../images/logos/logo_instagram.png" width="10%" alt="logo instagram">
-                    <img src="../images/logos/logo_facebook.png" width="10%" alt="logo facebook">
-                    <img src="../images/logos/logo_linkedin.png" width="10%" alt="logo linkedin">
+        <div class="container">
+            <div class="row"> 
+                <div class="col-8">
+                    <img class="redes" src="../images/logos/logo_instagram.png" width="10%" alt="logo instagram">
+                    <img class="redes" src="../images/logos/logo_facebook.png" width="10%" alt="logo facebook">
+                    <img class="redes" src="../images/logos/logo_linkedin.png" width="10%" alt="logo linkedin">
                 </div>
-                <div class="col">        
+                <div class="col-4">        
                     <p>Quiero ser Productor <a href="/Proyecto/html/contacto.html">CONTACTO</a></p>
                 </div>
             </div>
         </div>
         <!-- segunda linea de pagina-->
-        <div class="container"> 
+        <div class="container-fluid"> 
             <div class="row row-cols-4">
                 <div class="col"> 
                     <img src="../images/logo.jpeg" width="60%" alt="logo grupo"> 
@@ -57,56 +57,110 @@
         <li class="nav-item"><a href="../html/contacto.html">Contacto</a></li>
     </ul> 
     <main class="main">
-            <section class="section-servicios">
+            <section>
                 <h2>Nuestos Servicios</h2>
-                    <p class="p">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Distinctio commodi architecto quis, ex fugit veritatis eos inventore id quidem facilis mollitia. Quibusdam odio officiis fugit ad nemo veniam dolor nostrum.</p>
-                    <ul class="servicios-uno">   
-                        <li><img src="../images/seguros_personales.png" width="400" alt="imagen de seguros para personas">
-                            <p>Personas</p>
-                        </li>  
-                        <li><img src="../images/empresados.png" width="400" alt="imagen de seguros para empresas">
-                            <p>Empresas</p>
-                        </li>  
-                        <li><img src="../images/seguros_pas.png" width="400" alt="imagen productores">
-                            <p>Productores</p> 
-                        </li>
-                    </ul> 
-                        <h3>Seguros para Personas</h3> 
-                        <article class="grid-servicios">
-                                <img src="../images/seguro automotor.jpg" width="200" alt="Imagen de Automotor">
-                                <img src="../images/moto.jpg" width="200" alt="Imagen de Moto">
-                                <img src="../images/combinado familiar.jpg" width="200" alt="Imagen de Combinado Familiar">
-                                <img src="../images/accidentes personales.jpg" width="200" alt="Imagen de Accidentes personales">
-                                <img src="../images/caucion.jpg" width="200" alt="Imagen de Caucion de Alquiler">
-                                <img src="../images/praaxis medica.jpg" width="200" alt="Imagen de Praxis Medica">
-                        </article> 
-                        <h3>Seguros para Empresas</h3> 
-                        <article class="grid-servicios">
-                                <img src="../images/art.jpg" width="200" alt="Imagen ART">
-                                <img src="../images/comercio.jpg" width="200" alt="Imagen de Comercio">
-                                <img src="../images/consorcio.jpg" width="200" alt="Imagen de Consorcio">
-                                <img src="../images/industria.jpg" width="200" alt="Imagen de Industria">
-                                <img src="../images/trasporte.jpg" width="200" alt="Imagen de Trasporte">
-                                <img src="../images/clinica.jpg" width="200" alt="Imagen de Centro Odontologico">
-                        </article>  
+                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Distinctio commodi architecto quis, ex fugit veritatis eos inventore id quidem facilis mollitia. Quibusdam odio officiis fugit ad nemo veniam dolor nostrum.</p>
+                    <div class="grid-tres">   
+                        <div class="div-tres">
+                            <img src="../images/seguros-personales-cuadrado.jpg" width="300" alt="imagen de seguros para personas">
+                            <p>SEGUROS PERSONALES</p>
+                        </div>  
+                        <div class="div-tres">
+                            <img src="../images/seguros-corporativos-cuadrado.jpg" width="300" alt="imagen de seguros para empresas">
+                            <p>SEGUROS CORPORATIVOS</p>
+                        </div>  
+                        <div class="div-tres">
+                            <img src="../images/consultorias-cuadrado.jpg" width="300" alt="imagen se seguros de vida">
+                            <p>PRODUCTORES</p> 
+                        </div>
+                    </div> 
+                        <h3>Seguros Personales</h3>
+                            <article class="grid-cuatro"> 
+                                <div class="div-cuatro">
+                                    <img src="../images/ok-automotores-480x320.jpg" width="300" alt="Imagen de Autos">
+                                    <h5>Automotores</h5>
+                                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Mollitia, atque?</p>
+                                </div>
+                                <div class="div-cuatro">
+                                    <img src="../images/ok-motos-480x320.jpg" width="300" alt="Imagen de Moto">
+                                    <h5>Motos</h5>
+                                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Mollitia, atque?</p>
+                                </div>
+                                <div class="div-cuatro">
+                                    <img src="../images/ok-hogar-480x320.jpg" width="300" alt="Imagen de hogar">
+                                    <h5>Combinado Familiar</h5>
+                                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Mollitia, atque?</p>
+                                </div>
+                                <div class="div-cuatro">
+                                    <img src="../images/ok-bolso-protegido-480x320.jpg" width="300" alt="Imagen de bolso">
+                                    <h5>Bolso Protegido</h5>
+                                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Mollitia, atque?</p>
+                                </div>
+                                <div class="div-cuatro">
+                                    <img src="../images/ok-embarcaciones-de-placer-480x320.jpg" width="300" alt="Imagen de barco">
+                                    <h5>Embarcaciones de Placer</h5>
+                                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Mollitia, atque?</p>
+                                </div>
+                                <div class="div-cuatro">
+                                    <img src="../images/ok-accidentes-personales-480x320.jpg" width="300" alt="Imagen de Accidentes personales">
+                                    <h5>Accidentes Personales</h5>
+                                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Mollitia, atque?</p>
+                                </div>
+                            </article> 
+                        <h3>Seguros Corporativos</h3>
+                            <article class="grid-cuatro"> 
+                                <div class="div-cuatro">
+                                    <img src="../images/ok-comercios-480x320.jpg" width="300" alt="Imagen de comercio">
+                                    <h5>Comercios</h5>
+                                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Mollitia, atque?</p>
+                                </div>
+                                <div class="div-cuatro">
+                                    <img src="../images/ok-consorcios-480x320.jpg" width="300" alt="Imagen de consorcio">
+                                    <h5>Consorcios</h5>
+                                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Mollitia, atque?</p>
+                                </div>
+                                <div class="div-cuatro">
+                                    <img src="../images/ok-flota-de-automotores-y-camiones-480x320.jpg" width="300" alt="Imagen de flota camiones">
+                                    <h5>Flota de Automotores y Camiones</h5>
+                                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Mollitia, atque?</p>
+                                </div>
+                                <div class="div-cuatro">
+                                    <img src="../images/ok-art-480x320.jpg" width="300" alt="Imagen de art">
+                                    <h5>ART</h5>
+                                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Mollitia, atque?</p>
+                                </div>
+                                <div class="div-cuatro">
+                                    <img src="../images/ok-mercaderia-transportada-480x320.jpg" width="300" alt="Imagen de mercaderia">
+                                    <h5>Mercadería Transportada</h5>
+                                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Mollitia, atque?</p>
+                                </div>
+                                <div class="div-cuatro">
+                                    <img src="../images/ok-responsabilidad-civil-profesional-480x320.jpg" width="300" alt="Imagen de profesional">
+                                    <h5>Responsabildiad Civil Profesional</h5>
+                                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Mollitia, atque?</p>
+                                </div>
+                            </article> 
                         <article>
                             <h3>Servicios al Productor Asesor de Seguros</h3> 
-                                <p class="p">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Corporis illum similique qui dolores inventore pariatur nisi nam deleniti accusamus consequatur, in nemo eum at minus aliquid doloremque sit corrupti beatae facilis culpa est sint. Voluptas recusandae sint neque illum numquam esse similique quam quidem nam aliquid, fugit soluta vitae necessitatibus!</p>
-                                <iframe width="560" height="315" src="https://www.youtube.com/embed/BAhTQdjc-mA" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Corporis illum similique qui dolores inventore pariatur nisi nam deleniti accusamus consequatur, in nemo eum at minus aliquid doloremque sit corrupti beatae facilis culpa est sint. Voluptas recusandae sint neque illum numquam esse similique quam quidem nam aliquid, fugit soluta vitae necessitatibus!</p>
+                                <iframe width="616" height="347" src="https://www.youtube.com/embed/BAhTQdjc-mA" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
                         </article> 
-            </section>      
-        </main>
-
-        <footer class="footer-flex">
-            <a href="../html/contacto.html">Contacto</a>
-            <div class="divPie">
-                <img src="../images/logo.jpeg" width="60"> 
-                <p>GRUPO D'ANDREA ASESORES DE SEGUROS - MAXIMILIANO D'ANDREA N° de inscripción en SSN 12346</p>
-                <img src="../images/logos/descarga.jpg" width="70"> 
-                <p>Superintendencia de Seguro de la Nacion - Organo de Control de la Actividad Aseguradora y Reaseguradora</p>
-                <p>Atención al asegurado 0800-666-8400 / 4338-4000 / <a href="https://www.argentina.gob.ar/superintendencia-de-seguros">WWW.SSN.GOB.AR</a> </p>                
-            </div>              
-                <p class="fin">Copyright 2022 Grupo D'Andrea | Desarrollado por admin - Soluciones Digitales</p>    
-        </footer>
+            </section>
+                <!-- Ir a inicio-->    
+                <a href="../index.html">Inicio</a>   
+            </main>
+            <footer>
+                <div class="d-flex align-items-center flex-column">
+                    <img src="../images/logo.jpeg" width="6%" alt="logo grupo"> 
+                    <p>GRUPO D'ANDREA ASESORES DE SEGUROS - MAXIMILIANO D'ANDREA N° de inscripción en SSN 12346</p>
+                    <img src="../images/logos/descarga.jpg" width="6%" alt="logo SSN"> 
+                    <p>Superintendencia de Seguro de la Nacion - Organo de Control de la Actividad Aseguradora y Reaseguradora</p>
+                    <p>Atención al asegurado 0800-666-8400 / 4338-4000 / <a href="https://www.argentina.gob.ar/superintendencia-de-seguros">WWW.SSN.GOB.AR</a></p>                
+                </div>
+                <!-- Fin / septima linea de pagina-->              
+                    <p class="p">Copyright 2022 Grupo D'Andrea | Desarrollado por admin - Soluciones Digitales</p>    
+            </footer>
+            <!--JAVASSCRIPT DE BOOTSTRAP-->
+            <script src="../bootstrap/js/bootstrap.js"></script>
 </body>
 </html>
