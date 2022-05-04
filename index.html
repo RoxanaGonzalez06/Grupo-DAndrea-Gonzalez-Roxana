@@ -3,8 +3,12 @@
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- SEO -->
+    <meta name="keywords" content="seguros, ART, vida, productor, asesor, grupo">
     <title>Grupo D'Andrea - Asesores de Seguros</title>
+        <!-- DESCRIPCION -->
+    <meta name="description" content="Somos un Grupo de Productores Aesores de Seguros dedicados al asesoramiento y venta integral de seguros para empresas e individuos.">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
     <link rel="icon" href="icono.ico" type="image/x-icon">   
     <!--ESTILOS BOOTSTRAP-->
@@ -16,12 +20,12 @@
 <body>      
     <header>
         <!-- primera linea de pagina-->
-        <div class="container">
+        <div class="container-fluid-modif">
             <div class="row"> 
                 <div class="col-8">
-                    <img class="redes" src="images/logos/logo_whatsapp.png" alt="logo instagram">
-                    <img class="redes" src="images/logos/logo_facebook.png" alt="logo facebook">
-                    <img class="redes" src="images/logos/logo_linkedin.png" width="1%" alt="logo linkedin">
+                    <a href="https://web.whatsapp.com/" target="_blank"><img src="images/logos/logo_whatsapp.png" alt="logo whatsapp" width="4%"></a>
+                    <a href="https://www.facebook.com/" target="_blank"><img src="images/logos/logo_facebook.png" alt="logo facebook" width="4%"></a>
+                    <a href="https://ar.linkedin.com/" target="_blank"><img src="images/logos/logo_linkedin.png" alt="logo linkedin" width="4%"></a>
                 </div>
                 <div class="col-4">        
                     <p>Quiero ser Productor <a href="html/contacto.html">CONTACTO</a></p>
@@ -29,22 +33,22 @@
             </div>
         </div>
         <!-- segunda linea de pagina-->
-        <div class="container-fluid"> 
+        <div class="container-fluid-dos"> 
             <div class="row row-cols-4">
                 <div class="col"> 
-                    <img src="images/logo.jpeg" width="60%" alt="logo grupo"> 
+                    <img class="imag" src="images/logo.jpeg" width="55%" alt="logo grupo"> 
                 </div>       
                 <div class="col">
-                    <img src="images/logos/logo_telefono.png" width="15%" alt="telefono">
-                    <p>Llámenos (011) 41234678/9123</p>
+                    <img class="imag" src="images/logos/logo_telefono.png" width="15%" alt="telefono">
+                    <p>Llámenos al <br> (011) 41234678/9123</p>
                 </div>
                 <div class="col">
-                    <img src="images/logos/mail_dos.png" width="15%" alt="e-mail">
-                    <p>Envíanos E-Mail info@grupodandrea.com.ar</p>
+                    <img class="imag" src="images/logos/mail_dos.png" width="15%" alt="e-mail">
+                    <p>Envíanos E-Mail a <br> info@grupodandrea.com.ar</p>
                 </div>
                 <div class="col">
-                    <img src="images/logos/reloj_dos.png" width="15%" alt="reloj">
-                    <p>Horarios de atención de L-V: 08 a 17 hs S: 9 a 12:30 hs</p>
+                    <img class="imag" src="images/logos/reloj_dos.png" width="15%" alt="reloj">
+                    <p>Horarios de atención de <br> L-V: 08 a 17 hs S: 9 a 12:30 hs</p>
                 </div> 
             </div>  
         </div>      
@@ -54,32 +58,77 @@
             <li class="nav-item"><a href="index.html">Home</a></li>
             <li class="nav-item"><a href="html/nosotros.html">Nosotros</a></li>
             <li class="nav-item"><a href="html/servicios.html">Servicios</a></li>
-            <li class="nav-item"><a href="html/compañia.html">Compañías</a></li>
+            <li class="nav-item"><a href="html/compania.html">Compañías</a></li>
             <li class="nav-item"><a href="html/contacto.html">Contacto</a></li>
         </ul> 
         <main class="main">
-            <!-- Imagen de portada / cuarta linea de pagina-->
-            <div>
-                <img src="images/crop-businessman-giving-contract-to-woman-to-sign-3760067-1024x460.png" class="img-fluid" alt="imagen portada" width="100%">
-            </div>  
+            <!-- Imagen de portada / cuarta linea de pagina-->          
+            <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
+                <div class="carousel-inner">
+                  <div class="carousel-item active">
+                    <img src="images/portadaauto.jpg" class="d-block w-100" alt="...">
+                  </div>
+                  <div class="carousel-item">
+                    <img src="images/portadaart.jpg" class="d-block w-100" alt="...">
+                  </div>
+                  <div class="carousel-item">
+                    <img src="images/portadacasa.jpg" class="d-block w-100" alt="...">
+                  </div>
+                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
+                  <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                  <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="next">
+                  <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                  <span class="visually-hidden">Next</span>
+                </button>
+              </div>
             <!-- Quinta linea de pagina--> 
                 <article>
                     <h1>Grupo D'Andrea Asesores de Seguros</h1> 
                 </article>
-                <article>    
-                    <h3>Acompañamos tu crecimiento y cuidamos lo tuyo</h3>    
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatum, minus quis temporibus vero possimus eum dolore atque impedit delectus hic qui est vitae, unde, laudantium blanditiis laboriosam culpa! Minus illo deserunt excepturi sapiente, eum minima voluptatum odio aliquam hic, unde in adipisci sint harum nam sequi dolore omnis accusantium ullam.</p>
-                </article> 
-                <article>
-                    <h3>¿Porque confiar en nosotros?</h3>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nihil necessitatibus ab quibusdam tenetur aliquid, facere debitis, ipsam consequuntur officia, porro reprehenderit et nisi velit totam quod rerum asperiores consequatur voluptates?</p>
-                </article>    
-                <article>
-                    <h3>Somos especialistas en Seguros de Vida, ART, Seguros para personas y empresas.</h3>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nihil necessitatibus ab quibusdam tenetur aliquid, facere debitis, ipsam consequuntur officia, porro reprehenderit et nisi velit totam quod rerum asperiores consequatur voluptates?</p>
-                </article>
+                <div class="caja-comodin" class="accordion" id="accordionExample">
+                    <div class="accordion-item">
+                      <h2 class="accordion-header" id="headingOne">
+                        <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                            Acompañamos tu crecimiento y cuidamos lo tuyo.
+                        </button>
+                      </h2>
+                      <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne" data-bs-parent="#accordionExample">
+                        <div class="accordion-body">
+                          <strong>Acompañamos tu crecimiento y desarrollo, asesorándote y convirtiéndonos en un miembro más de tu equipo.</strong> Lorem ipsum dolor sit amet consectetur adipisicing elit. Eaque, consequuntur laborum corporis possimus animi voluptatem natus quisquam necessitatibus. Tempora eveniet ipsum quae perspiciatis voluptatem eligendi porro accusamus, id velit placeat enim fugit dolore distinctio atque! Sed quasi veniam libero sint. a CSS transitions. You can modify any of this with custom CSS or overriding our default variables. It's also worth noting that just about any HTML can go within the Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quis suscipit tempore alias harum beatae porro repellat vel numquam necessitatibus dolores a, tempora similique natus. Beatae, dolores illo, odit labore similique quasi iste delectus vitae nemo provident possimus blanditiis esse odio nihil itaque ipsum dolorum consequuntur est reiciendis sapiente a eos exercitationem. In voluptatem nihil ducimus placeat voluptas possimus omnis ex hic autem, beatae perferendis nemo reiciendis, id veniam dolorem saepe voluptates quidem, perspiciatis laborum. Ducimus.
+                        </div>
+                      </div>
+                    </div>
+                    <div class="accordion-item">
+                      <h2 class="accordion-header" id="headingTwo">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                            ¿Porque confiar en nosotros?
+                        </button>
+                      </h2>
+                      <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#accordionExample">
+                        <div class="accordion-body">
+                          <strong>Nadie conoce mejor que nosotros tus necesidades y tus expectativas.</strong> It is hidden by default, until the collapse plugin adds the appropriate classes that we use to style each element. These classes control the overall appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding our default variables. It's also worth noting that just about any HTML can go Lorem ipsum dolor, sit amet consectetur adipisicing elit. Repellendus atque unde incidunt quos aspernatur esse fugiat quas repellat nemo ipsa recusandae, modi tenetur cupiditate officiis ipsam eos architecto accusantium porro cum dignissimos maiores harum asperiores quaerat. Magni eos quasi doloribus voluptatem? Dignissimos quae praesentium rem quis animi cupiditate similique impedit voluptatum commodi placeat repellendus, id, fugit repudiandae vero suscipit fuga, facere quia tenetur veritatis possimus tempore delectus! Dolore, ducimus iusto omnis nemo, sit itaque ab deserunt quam laboriosam, eum facere?
+                        </div>
+                      </div>
+                    </div>
+                    <div class="accordion-item">
+                      <h2 class="accordion-header" id="headingThree">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                            Somos especialistas en Seguros de Vida, ART, Seguros para personas y empresas.
+                        </button>
+                      </h2>
+                      <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#accordionExample">
+                        <div class="accordion-body">
+                          <strong>Un conocimiento especializado en las diferentes coberturas, con herramientas. hace más de 50 años.</strong> It is hidden by default, until the collapse plugin Lorem ipsum dolor sit amet consectetur adipisicing elit. Sit repudiandae libero est culpa, sapiente impedit assumenda perspiciatis aperiam iure odit quis! Blanditiis illum quaerat ex quam quis beatae quia facere? Lorem ipsum dolor sit amet consectetur adipisicing elit. Cupiditate facilis quis tempore omnis vel odio unde numquam pariatur aliquam est, ipsa impedit exercitationem libero sit soluta maxime neque nihil, officiis animi. Laudantium omnis unde ea. Sed dolores, porro qui tempora mollitia, in voluptates, officia ipsam eaque impedit eveniet odio fugiat? Tempora aliquam itaque iure ut cumque. Quia non placeat quos.
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+
             <!-- Ir a inicio rapido-->    
-                <a href="index.html">Inicio</a>    
+                <a href="index.html" class="caja-comodin">Inicio</a>    
         </main>
         <!-- Pie de Pagina / sexta linea de pagina-->      
         <footer>

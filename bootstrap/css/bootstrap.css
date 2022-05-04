@@ -621,6 +621,7 @@ progress {
   color: #6c757d;
 }
 
+
 .container-fluid,
 .container-xxl,
 .container-xl,
@@ -659,6 +660,7 @@ progress {
     max-width: 1320px;
   }
 }
+
 .row {
   --bs-gutter-x: 1.5rem;
   --bs-gutter-y: 0;
@@ -668,6 +670,7 @@ progress {
   margin-right: calc(-0.5 * var(--bs-gutter-x));
   margin-left: calc(-0.5 * var(--bs-gutter-x));
 }
+
 .row > * {
   flex-shrink: 0;
   width: 100%;
@@ -677,9 +680,11 @@ progress {
   margin-top: var(--bs-gutter-y);
 }
 
+/* se modifica
 .col {
   flex: 1 0 0%;
 }
+
 
 .row-cols-auto > * {
   flex: 0 0 auto;
@@ -700,12 +705,14 @@ progress {
   flex: 0 0 auto;
   width: 33.3333333333%;
 }
+*/
 
 .row-cols-4 > * {
   flex: 0 0 auto;
   width: 25%;
 }
 
+/*
 .row-cols-5 > * {
   flex: 0 0 auto;
   width: 20%;
