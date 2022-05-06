@@ -14,7 +14,7 @@
     <!--ESTILOS BOOTSTRAP-->
     <link rel="stylesheet" href="../bootstrap/css/bootstrap.css">
     <!---ESTILOS PROPIOS-->
-    <link rel="stylesheet" href="../styles/estilodos.css">  
+    <link rel="stylesheet" href="../scss/destino.css">   
 
 </head>
 <body>
@@ -28,7 +28,7 @@
                     <a href="https://ar.linkedin.com/" target="_blank"><img class="redes" src="../images/logos/logo_linkedin.png" width="4%" alt="logo linkedin"></a>
                 </div>
                 <div class="col-4">        
-                    <p>Quiero ser Productor <a href="/Proyecto/html/contacto.html">CONTACTO</a></p>
+                    <p>Quiero ser Productor <a href="contacto.html">CONTACTO</a></p>
                 </div>
             </div>
         </div>
@@ -62,49 +62,89 @@
         <li class="nav-item"><a href="../html/contacto.html">Contacto</a></li>
     </ul> 
     <main class="main">
-        <section class="text-center">
-            <H1>Contacto</H1>
-            <p>Envianos tus comentarios, sugerencias o solicitud de información, y en breve nos pondremos en contacto con vos para satisfacer tus requerimientos.</p>  
-            <img src="../images/atencion_telefonica.png" width= "35%" alt="atencion telefonica">
-            <article> 
-                <form action="">
-                    <div>
-                        <label for="nombre">Nombre:</label>
-                        <input type="text" name="Nombre"><br>
-                        <label for="mail">Email:</label>
-                        <input type="mail" name="mail"><br>
-                        <label for="telefono">Teléfono:</label>
-                        <input type="text" name="telefono"><br>
-                        <label for="mensaje">Mensaje:</label>
-                        <textarea name="mensaje" cols="40" aria-rowspan="20"></textarea>
+            <div class="text-center">
+                <h1>Contacto</h1>
+                <p>Envianos tus comentarios, sugerencias o solicitud de información, y en breve nos pondremos en contacto con vos para satisfacer tus requerimientos.</p>  
+            </div>
+        <div class="grid-contacto">
+            <section>
+                <article> 
+                    <h2 class="div-servicios">Formulario de contacto</h2>
+                    <div class="container-fluid-contacto">
+                        <form action="">
+                            <div>
+                                <div class="form-floating mb-3">
+                                    <input type="text" name="Nombre" class="form-control" id="floatingInput">
+                                    <label for="Nombre">Nombre y Apellido</label>
+                                </div>
+                                <div class="form-floating mb-3">
+                                    <input type="email" class="form-control" id="floatingInput" placeholder="name@example.com">
+                                    <label for="floatingInput">E-mail</label>
+                                </div>
+                                <div class="form-floating mb-3">
+                                    <input type="text" class="form-control" id="floatingPassword">
+                                    <label for="telefono">Teléfono</label>
+                                </div>
+                                <div class="form-floating mb-3">
+                                    <input type="text" name="Nombre" class="form-control" id="floatingInput">
+                                    <label for="Nombre">Asunto</label>
+                                </div>
+                                <div class="form-floating mb-3">
+                                    <select class="form-select" id="floatingSelect" aria-label="Floating label select example">
+                                      <option selected>Servicios</option>
+                                      <option value="1">Seguros Personales</option>
+                                      <option value="2">Seguros Corporativos</option>
+                                      <option value="3">Productores</option>
+                                    </select>    
+                                </div>
+                                <div class="form-floating">
+                                    <textarea class="form-control" placeholder="Leave a comment here" id="floatingTextarea2" style="height: 190px"></textarea>
+                                    <label for="floatingTextarea2">Mensaje</label>
+                                  </div>
+                            </div>
+                        </form>  
                     </div>
-                </form>  
-            </article>
-            <article>   
-                <h2>Nuestras oficionas</h2>
+                </article>
+            </section>
+            <section>
+                <article>   
+                    <h2 class="div-servicios">Nuestras oficionas</h2>
                     <div>
                         <div>
-                            <h3>Sede Central</h3>
-                            <p>UBICACION: Av. Hipólito Yrigoyen 9190 <br> San Vicente, Provincia de Buenos Aires </p>
-                            <p>Lineas Rotativas: (011) 41234678/9123</p> 
-                            <p>Mail: info@grupodandrea.com.ar</p>
-                            <p>Nuestos horarios de atención son de Lunes a Viernes de 8 a 17 hs y Sábados de 9 a 12:30 hs</p>          
+                            <h4 class="div-servicios">Sede Central</h4>
+                            <p><strong> Ubicación:</strong> Av. Hipólito Yrigoyen 9190 <br> San Vicente, Provincia de Buenos Aires </p>
+                            <p> <strong> Lineas Rotativas: </strong> (011) 41234678/9123</p> 
+                            <p> <strong> Mail: </strong> info@grupodandrea.com.ar</p>
+                            <p> <strong> Nuestos horarios de atención: </strong><br> Lunes a Viernes de 8 a 17 hs y Sábados de 9 a 12:30 hs</p>          
                         </div>
-                        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d52277.79369649799!2d-58.460900852386786!3d-35.022670079929675!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bd2da71a3b65fd%3A0x4caffd42940be4c5!2sSan%20Vicente%2C%20Provincia%20de%20Buenos%20Aires!5e0!3m2!1ses-419!2sar!4v1647356351125!5m2!1ses-419!2sar" width="800" height="400" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+                        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d52277.79369649799!2d-58.460900852386786!3d-35.022670079929675!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bd2da71a3b65fd%3A0x4caffd42940be4c5!2sSan%20Vicente%2C%20Provincia%20de%20Buenos%20Aires!5e0!3m2!1ses-419!2sar!4v1647356351125!5m2!1ses-419!2sar" width="90%" height="320px" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
                     </div>
                 </article> 
-        </section>
+            </section>
             <!-- Ir a inicio-->    
-            <a href="../index.html">Inicio</a>   
+            <a href="../index.html">Inicio</a>      
+        </div>
     </main>
     <footer>
-        <div class="d-flex align-items-center flex-column">
-            <img src="../images/logo.jpeg" width="6%" alt="logo grupo"> 
-            <p>GRUPO D'ANDREA ASESORES DE SEGUROS - MAXIMILIANO D'ANDREA N° de inscripción en SSN 12346</p>
-            <img src="../images/logos/descarga.jpg" width="6%" alt="logo SSN"> 
-            <p>Superintendencia de Seguro de la Nacion - Organo de Control de la Actividad Aseguradora y Reaseguradora</p>
-            <p>Atención al asegurado 0800-666-8400 / 4338-4000 / <a href="https://www.argentina.gob.ar/superintendencia-de-seguros">WWW.SSN.GOB.AR</a></p>                
-        </div>
+        <div class="logo-footer">
+            <img src="../images/logo.jpeg" width="10%" alt="logo grupo"> 
+          </div>
+          <div class="container-fluid-dos">
+              <div class="row row-cols-4">
+                  <div class="col">
+                    <p>GRUPO D'ANDREA ASESORES DE SEGUROS <br>MAXIMILIANO D'ANDREA <br> <strong> Matricula SSN 12346</strong> </p>
+                  </div>
+                  <div class="col">
+                    <p>Atención al asegurado <br> 0800-666-8400 / 4338-4000 </p>
+                  </div>
+                  <div class="col">
+                    <p>Organo de Control de la Actividad <br> Aseguradora y Reaseguradora <br> <a href="https://www.argentina.gob.ar/superintendencia-de-seguros">WWW.SSN.GOB.AR</a> </p>
+                  </div>
+                  <div class="col">
+                    <img src="../images/logos/descarga.jpg" width="40%" alt="logo SSN"> 
+                  </div>                
+              </div>
+          </div> 
         <!-- Fin / septima linea de pagina-->              
             <p class="p">Copyright 2022 Grupo D'Andrea | Desarrollado por admin - Soluciones Digitales</p>    
     </footer>

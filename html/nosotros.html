@@ -14,7 +14,7 @@
     <!--ESTILOS BOOTSTRAP-->
     <link rel="stylesheet" href="../bootstrap/css/bootstrap.css">
     <!---ESTILOS PROPIOS-->
-    <link rel="stylesheet" href="../styles/estilodos.css">  
+    <link rel="stylesheet" href="../scss/destino.css">   
 </head>
 <body>
     <header>
@@ -27,7 +27,7 @@
                     <a href="https://ar.linkedin.com/" target="_blank"><img class="redes" src="../images/logos/logo_linkedin.png" width="4%" alt="logo linkedin"></a>
                 </div>
                 <div class="col-4">        
-                    <p>Quiero ser Productor <a href="/Proyecto/html/contacto.html">CONTACTO</a></p>
+                    <p>Quiero ser Productor <a href="contacto.html">CONTACTO</a></p>
                 </div>
             </div>
         </div>
@@ -61,32 +61,62 @@
         <li class="nav-item"><a href="../html/contacto.html">Contacto</a></li>
     </ul> 
     <main class="main">
-        <section>
+        <section class="container-fluid">
             <div class="div-servicios">
                 <h1>¿Quiénes somos?</h1>
                 <p>Somos una empresa dedicada a la gestión integral de seguros con una trayectoria de 45 años en el mercado. La calidad, la excelencia en el servicio, la dedicación y el trato personal cotidiano forman parte de nuestra misión hacia nuestra comunidad. Entendemos que al momento de un siniestro es cuando ponemos en juego las promesas realizadas y la fe que el asegurado depositó en nosotros.</p>
             </div>
-            <article class="grid">
-                <div class="div-uno">
-                    <img src="../images/nosotros1.png" width="350px" alt="imagen de compromiso">
-                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Accusamus dolorem quam aliquam magnam, ex praesentium.</p>  
+            <div class="row row-cols-1 row-cols-md-3 g-4">
+                <div class="col">
+                    <div class="card">
+                        <div class="card-texto">
+                            <img src="../images/compromiso.jpg" class="card-img-top" alt="imagen de compromiso">
+                            <h5 class="card-title">Compromiso</h5>
+                        </div>   
+                        <div class="card-body">
+                            <p class="card-text">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Accusamus dolorem quam aliquam magnam, ex praesentium.</p>
+                        </div>
+                    </div>
                 </div>
-                <div class="div-uno">
-                    <img src="../images/nosotros2.png" width="350px" alt="imagen de trasparencia"> 
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sunt consequuntur nisi vero iste? Amet, eius.</p> 
-                </div>    
-                <div class="div-uno">   
-                    <img src="../images/nosotros3.png" width="350px" alt="imagen de servicio">
-                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Suscipit impedit velit ut exercitationem autem reprehenderit!</p>  
-                </div>     
-                <div class="div-uno">    
-                    <img src="../images/nosotros4.png" width="350px" alt="imagen de profesionalismo"> 
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Minima in harum odio! Fugiat, temporibus modi.</p>                  
-                </div>     
-            </article>
+                <div class="col">
+                    <div class="card">
+                        <div class="card-texto">
+                            <img src="../images/trasparencia.jpg" class="card-img-top" alt="imagen de trasparencia">
+                            <h5 class="card-title">Trasparencia</h5>
+                        </div>
+                        <div class="card-body">
+                            <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card">
+                        <div class="card-texto" >
+                            <img src="../images/servicio.jpg" class="card-img-top" alt="imagen de servicio">
+                            <h5 class="card-title">Servicio</h5>
+                        </div>
+                        <div class="card-body">
+                            <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card">
+                        <div class="card-texto">
+                            <img src="../images/profesionalismo.jpg" class="card-img-top" alt="imagen de profesionalismo">
+                            <h5 class="card-title">Profesionalismo</h5>
+                        </div>    
+                        <div class="card-body">
+                            <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </section>
-        <section>
+        <section class="container-fluid">
+            <div class="div-servicios">
                 <h2>Nuestro equipo</h2>
+            </div>
                 <article class="grid-dos">
                     <div class="div-dos">
                         <img class="equipo" src="../images/foto1.jpg" width="200px" alt="imagen persona 1">
@@ -118,13 +148,25 @@
             <a href="../html/contacto.html">Contacto</a>   
     </main>
     <footer>
-        <div class="d-flex align-items-center flex-column">
-            <img src="../images/logo.jpeg" width="6%" alt="logo grupo"> 
-            <p>GRUPO D'ANDREA ASESORES DE SEGUROS - MAXIMILIANO D'ANDREA N° de inscripción en SSN 12346</p>
-            <img src="../images/logos/descarga.jpg" width="6%" alt="logo SSN"> 
-            <p>Superintendencia de Seguro de la Nacion - Organo de Control de la Actividad Aseguradora y Reaseguradora</p>
-            <p>Atención al asegurado 0800-666-8400 / 4338-4000 / <a href="https://www.argentina.gob.ar/superintendencia-de-seguros">WWW.SSN.GOB.AR</a></p>                
-        </div>
+        <div class="logo-footer">
+            <img src="../images/logo.jpeg" width="10%" alt="logo grupo"> 
+          </div>
+          <div class="container-fluid-dos">
+              <div class="row row-cols-4">
+                  <div class="col">
+                    <p>GRUPO D'ANDREA ASESORES DE SEGUROS <br>MAXIMILIANO D'ANDREA <br> <strong> Matricula SSN 12346</strong> </p>
+                  </div>
+                  <div class="col">
+                    <p>Atención al asegurado <br> 0800-666-8400 / 4338-4000 </p>
+                  </div>
+                  <div class="col">
+                    <p>Organo de Control de la Actividad <br> Aseguradora y Reaseguradora <br> <a href="https://www.argentina.gob.ar/superintendencia-de-seguros">WWW.SSN.GOB.AR</a> </p>
+                  </div>
+                  <div class="col">
+                    <img src="../images/logos/descarga.jpg" width="40%" alt="logo SSN"> 
+                  </div>                
+              </div>
+          </div> 
         <!-- Fin / septima linea de pagina-->              
             <p class="p">Copyright 2022 Grupo D'Andrea | Desarrollado por admin - Soluciones Digitales</p>    
     </footer>

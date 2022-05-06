@@ -1,36 +1,9 @@
-/*VARIABLES*/
-
-$colorprincipal: rgb(145, 90, 86);
-$colorsecundario: rgb(255, 255, 255);
-
 /*IMPORTAR*/
+@import "variables";
 @import "header";
+@import "menu";
 @import "footer";  
-
-// EXTENDS
-.div-servicios {
-    margin: 1%;
-    padding: 1%;
-    text-align: center;
-}
-
-.div-uno{
-    @extend .div-servicios;
-    width: 100%;  
-    height: 300px;
-}
-
-.div-dos {  
-    @extend .div-servicios;
-    width: 100%;  
-    height: 350px;
-}    
-
-.div-logo {
-    @extend .div-servicios; 
-    width: 100%;  
-    height: 100px;
-}
+@import "div";               
 
 /*ESTILOS GENERALES*/
 header {
@@ -40,26 +13,6 @@ header {
     padding: 1%;
     }
 
-    /******MENU******/
-ul {
-    width: 100%;
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
-    overflow: hidden;
-    background-color: $colorprincipal;
-    li a {
-        display: block;
-        color: white;
-        text-align: center;
-        padding: 14px 16px;
-        text-decoration: none;
-        li {
-            float: left;
-          }
-      }
-  }
-  
     /******CUERPO******/
 main {
     width: 100%;
@@ -74,19 +27,131 @@ article {
      margin: 1%;
 }
 
-.div-logo {
-    width: 100%;  
-    height: 100px;
-    margin: 1%;
+label {
+    margin: 2%;
     padding: 1%;
+}
+
+.section {
+    width: 100%;
+    margin: 2%;
+    padding: 1%;
+}
+
+.container-fluid-modif-section{
+    width: 90%;
+    height: 10%;
+    padding-right: var(--bs-gutter-x, 0.75rem);
+    padding-left: var(--bs-gutter-x, 0.75rem);
+    margin-right: auto;
+    margin-left: auto;
+    padding: 1%;
+    border: solid 1px $colorprincipal;
+    text-align: center;
+}   
+
+.container-fluid-contacto {
+    width: 90%;
+    padding-right: var(--bs-gutter-x, 0.75rem);
+    padding-left: var(--bs-gutter-x, 0.75rem);
+    margin-right: auto;
+    margin-left: auto;
+    padding: 1%;
+    border: solid 1px $colorprincipal;
     text-align: center;
 }
+/*revisar
+@media (min-width: 576px) {
+  .container-sm, .container {
+    max-width: 540px;
+  }
+}
+@media (min-width: 768px) {
+  .container-md, .container-sm, .container {
+    max-width: 720px;
+  }
+}
+@media (min-width: 992px) {
+  .container-lg, .container-md, .container-sm, .container {
+    max-width: 960px;
+  }
+}
+@media (min-width: 1200px) {
+  .container-xl, .container-lg, .container-md, .container-sm, .container {
+    max-width: 1140px;
+  }
+}
+@media (min-width: 1400px) {
+  .container-xxl, .container-xl, .container-lg, .container-md, .container-sm, .container {
+    max-width: 1320px;
+  }
+}
+}
+*/
 
 /* ESTILOS ESPECIFICOS */
 
     /*Degradado del main*/
 .main{
     background: linear-gradient($colorsecundario, $colorprincipal, $colorsecundario);
+}
+
+.grid-cuatro {
+    display: grid;
+    grid-template-columns: 30% 30% 30%;
+    justify-content:center;
+    grid-column-gap: 50px;
+    grid-row-gap: 10px;
+}
+
+.grid-tres {
+    display: grid;
+    grid-template-columns: 25% 25% 25%;
+    justify-content:space-evenly;
+    justify-items: center;
+}
+
+.grid {
+    display: grid;
+    grid-template-columns: 40% 40%;
+    grid-template-rows: 300px 300px;
+    grid-column-gap: 10px;
+    grid-row-gap: 10px;
+    justify-content:space-evenly;
+}
+
+.grid-dos {
+    display: grid;
+    grid-template-columns: 25% 25% 25% 25%;
+    grid-column-gap: 10px;
+    justify-content:center;
+}
+
+.grid-cias {
+    display: grid;
+    grid-template-columns: 25% 25% 25% 25%;
+    grid-template-rows: 150px 150px 150px 150px;
+    grid-column-gap: 10px;
+    grid-row-gap: 10px;
+    justify-content:center;
+    align-items: center;
+}
+
+.grid-contacto {
+    display: grid;
+    grid-template-columns: 45% 45%;
+    grid-column-gap: 10px;
+    justify-content:center;
+}
+
+/*Transicion de nuestro equipo*/
+.equipo {
+    width: 80%;
+    transition: all 1s;
+  
+}
+.equipo:hover {
+    width: 100%;
 }
 
 /* ESTILOS BOOTSTRAP MODIFICADOS*/
@@ -105,3 +170,81 @@ justify-content: space-between;
     width: 33.33333333%;
 }
 
+
+.row {
+    --bs-gutter-x: 1.5rem;
+    --bs-gutter-y: 0;
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: calc(-1 * var(--bs-gutter-y));
+    margin-right: calc(-0.5 * var(--bs-gutter-x));
+    margin-left: calc(-0.5 * var(--bs-gutter-x));
+        .row-cols-1 > * {
+            flex: 0 0 auto;
+            width: 100%;
+                .row-cols-md-3 > * {
+                    flex: 0 0 auto;
+                    width: 33.3333333333%;
+                        .g-4 {            
+                            --bs-gutter-x: 1.5rem;
+                            --bs-gutter-y: 1.5rem;
+                                .col {
+                                    flex: 1 0 0%;  
+                                        .card {
+                                            position: relative;
+                                            display: flex;
+                                            flex-direction: column;
+                                            min-width: 0;
+                                            word-wrap: break-word;
+                                            background-color: #fff;
+                                            background-clip: border-box;
+                                            border: 1px solid rgba(0, 0, 0, 0.125);
+                                            border-radius: 0.25rem;
+                                        }
+                              }
+                      }
+                }
+        }   
+  }
+ 
+
+ .card-img-top { 
+  width: 100%;
+  height: 200px;
+  border-top-left-radius: calc(0.25rem - 1px);
+  border-top-right-radius: calc(0.25rem - 1px);
+}
+
+.card-body {
+    height: 150px;
+    flex: 1 1 auto;
+    padding: 1rem 1rem;
+        .card-title {
+            margin-bottom: 0.5rem;
+                .card-text:last-child {
+                    margin-bottom: 0;
+                }
+        }
+  }
+
+.card-texto {
+    height: 200px;
+    overflow: hidden;
+    position: relative;
+}
+
+.card-texto img {
+    width: 100%;
+    height: 100%;
+}
+
+.card-texto h5{
+    font-size: 2rem;
+    color: white;
+    text-shadow: 0 0 10px black;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+  

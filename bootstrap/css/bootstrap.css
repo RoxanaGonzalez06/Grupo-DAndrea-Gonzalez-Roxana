@@ -661,6 +661,7 @@ progress {
   }
 }
 
+/*
 .row {
   --bs-gutter-x: 1.5rem;
   --bs-gutter-y: 0;
@@ -670,6 +671,7 @@ progress {
   margin-right: calc(-0.5 * var(--bs-gutter-x));
   margin-left: calc(-0.5 * var(--bs-gutter-x));
 }
+*/
 
 .row > * {
   flex-shrink: 0;
@@ -874,6 +876,7 @@ progress {
   --bs-gutter-y: 1rem;
 }
 
+/*
 .g-4,
 .gx-4 {
   --bs-gutter-x: 1.5rem;
@@ -883,6 +886,7 @@ progress {
 .gy-4 {
   --bs-gutter-y: 1.5rem;
 }
+*/
 
 .g-5,
 .gx-5 {
@@ -1127,10 +1131,12 @@ progress {
     width: 50%;
   }
 
+  /*
   .row-cols-md-3 > * {
     flex: 0 0 auto;
     width: 33.3333333333%;
   }
+*/
 
   .row-cols-md-4 > * {
     flex: 0 0 auto;
@@ -4494,6 +4500,7 @@ textarea.form-control-lg {
   color: #fff;
 }
 
+/*
 .card {
   position: relative;
   display: flex;
@@ -4505,6 +4512,8 @@ textarea.form-control-lg {
   border: 1px solid rgba(0, 0, 0, 0.125);
   border-radius: 0.25rem;
 }
+*/
+
 .card > hr {
   margin-right: 0;
   margin-left: 0;
@@ -4528,6 +4537,7 @@ textarea.form-control-lg {
   border-top: 0;
 }
 
+/*
 .card-body {
   flex: 1 1 auto;
   padding: 1rem 1rem;
@@ -4536,6 +4546,7 @@ textarea.form-control-lg {
 .card-title {
   margin-bottom: 0.5rem;
 }
+*/
 
 .card-subtitle {
   margin-top: -0.25rem;
@@ -4591,6 +4602,7 @@ textarea.form-control-lg {
   border-radius: calc(0.25rem - 1px);
 }
 
+/*
 .card-img,
 .card-img-top,
 .card-img-bottom {
@@ -4602,6 +4614,7 @@ textarea.form-control-lg {
   border-top-left-radius: calc(0.25rem - 1px);
   border-top-right-radius: calc(0.25rem - 1px);
 }
+*/
 
 .card-img,
 .card-img-bottom {

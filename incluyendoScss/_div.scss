@@ -1,0 +1,23 @@
+.div-servicios {    
+    margin: 1%;
+    padding: 1%;
+    text-align: center; 
+}
+
+.div-uno{
+    @extend .div-servicios;
+    width: 100%;  
+    height: 300px;
+}
+
+.div-dos {  
+    @extend .div-servicios;
+    width: 100%;  
+    height: 350px;
+}    
+
+.div-logo {
+    @extend .div-servicios; 
+    width: 100%;  
+    height: 100px;
+}
